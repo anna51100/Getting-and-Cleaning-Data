@@ -26,6 +26,7 @@ After I merged the train set with test set, I use the variable name without trai
 * y - merge of y_train and y_test
 * subject - merge of subject_train and subject_test
 * data - merge of x, y, and subject
+* average - get column average of first 66 columns in data
 
 # Transformation
 I use features data to name x columns. I also added the column name for y and subject.
