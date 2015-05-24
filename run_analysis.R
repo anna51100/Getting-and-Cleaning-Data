@@ -29,7 +29,7 @@ x <- x[, mean_and_std]
 
 # 3. Uses descriptive activity names to name the activities in the data set
 
-# update actirity id with activity name
+# update activity id with activity name
 y[, 1] <- activity_labels[y[, 1], 2]
 names(y) <- "activity"
 
