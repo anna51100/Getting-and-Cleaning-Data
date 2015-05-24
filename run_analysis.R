@@ -46,7 +46,7 @@ names(data) <- gsub("^(f)","freq",names(data))
 
 # 5. From the data set in step 4, creates a second, independent tidy data set 
 # with the average of each variable for each activity and each subject.
-
+ncol(x) #66 columns in x
 average <- ddply(data, .(subject_id, activity), function(x) colMeans(x[, 1:66]))
 
 write.table(average, "average.txt", row.name=FALSE)
